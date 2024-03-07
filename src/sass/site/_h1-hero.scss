@@ -29,7 +29,7 @@
         &::before{
             position: absolute;
             content: "";
-            background-image: url(../images/img/hero/hero_circle.webp);
+            background-image: url(../images/hero_circle.svg);
             background-repeat: no-repeat;
             background-size: cover;
             width: 540px;
@@ -87,6 +87,10 @@
             background-size: cover;
             height: 540px;
             width: 540px;
+
+            @media #{$xs}{
+                height: 223px;
+            }
         }
         .circle-caption{
             margin: auto;
@@ -156,7 +160,7 @@
                 }
             }
             & h1{
-                font-size: 65px;
+                font-size: 56px;
                 font-weight: 700;
                 margin-bottom: 14px;
                 color: #fff;
@@ -165,21 +169,21 @@
                 text-transform: capitalize;
                 margin-bottom: 30px;
                 @media #{$lg}{
-                    font-size: 50px;
+                    font-size: 44px;
                     line-height: 1.2;
                 }
                 @media #{$md}{
-                    font-size: 34px;
+                    font-size: 28px;
                     line-height: 1.2;
                     margin-bottom: 10px;
                 }
                 @media #{$sm}{
-                    font-size: 30px;
+                    font-size: 24px;
                     line-height: 1.4;
                     margin-bottom: 8px;
                 }
                 @media #{$xs}{
-                    font-size: 27px;
+                    font-size: 21px;
                     line-height: 1.4;
                     margin-bottom: 8px;
                 }

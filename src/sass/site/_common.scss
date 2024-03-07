@@ -752,6 +752,11 @@ hr {
 		border-top-color: #0078ff;
 	}
 	.preloader .preloader-img {
+		font-family: $font_1;
+		line-height: 1.2;
+		text-transform: capitalize;
+		color: #3b1555;
+
 		position: absolute;
 		top: 50%;
 		z-index: 200;

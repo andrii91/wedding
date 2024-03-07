@@ -1,5 +1,73 @@
 @import 'variables';
 
+
+
+.section-title {
+  margin-bottom: 30px;
+}
+
+.section-title::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  bottom: 11px;
+  left: calc(50% - 80px);
+  background: var(--purple);
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  bottom: 11px;
+  right: calc(50% - 80px);
+  background: var(--purple);
+}
+
+
+.timeline .row {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .timeline::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+    background: var(--purple);
+  }
+  .timeline .row::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    background: #FFFFFF;
+    border: 2px solid var(--purple);
+    transform: rotate(45deg);
+    z-index: 1;
+  }
+  .timeline .row::after {
+    content: "\f004";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 8px);
+    color: var(--purple);
+    z-index: 2;
+  }
+}
+
+
 body {
   overflow-x: hidden;
   @import 'MediaQueries/main';
