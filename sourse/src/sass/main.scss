@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Artemis cursive';
+    src: url('../fonts/Artemiscursive.eot');
+    src: url('../fonts/Artemiscursive.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Artemiscursive.woff2') format('woff2'),
+        url('../fonts/Artemiscursive.woff') format('woff'),
+        url('../fonts/Artemiscursive.ttf') format('truetype'),
+        url('../fonts/Artemiscursive.svg#Artemiscursive') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+.ff-Artemis {
+    font-family: 'Artemis cursive';
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import 'info/main';
+@import 'info/bootstrap';
+@import 'info/slick';
+@import 'info/slicknav';
+@import 'info/fontawesome';
+@import 'info/fancybox';
+
+@import 'site/style';
+
+.bg-secondary {
+    background-color: #EDF5F7 !important;
+}
+.faq {
+  &-item {
+    margin-top: 24px;
+    .title {
+      font-family: 'Artemis cursive';
+      font-size: 1.5rem;
+      font-weight: 200;
+      line-height: 1.2;
+      padding: 12px 40px 12px 16px;
+      border-bottom: 1px solid #ccc;
+      cursor: pointer;
+      position: relative;
+
+      &::before {
+        content: "";
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' width='256' height='256' viewBox='0 0 256 256' xml:space='preserve'%3E%3Cdefs%3E%3C/defs%3E%3Cg style='stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;' transform='translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)' %3E%3Cpath d='M 90 24.25 c 0 -0.896 -0.342 -1.792 -1.025 -2.475 c -1.366 -1.367 -3.583 -1.367 -4.949 0 L 45 60.8 L 5.975 21.775 c -1.367 -1.367 -3.583 -1.367 -4.95 0 c -1.366 1.367 -1.366 3.583 0 4.95 l 41.5 41.5 c 1.366 1.367 3.583 1.367 4.949 0 l 41.5 -41.5 C 89.658 26.042 90 25.146 90 24.25 z' style='stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;' transform=' matrix(1 0 0 1 0 0) ' stroke-linecap='round' /%3E%3C/g%3E%3C/svg%3E");
+        width: 24px;
+        height: 24px;
+        background-size: 100%;
+        position: absolute;
+        top: 50%;
+        right: 16px;
+        transform: translateY(-50%);
+      }
+
+      &.active {
+        &::before {
+          transform: translateY(-50%) rotate(180deg);
+        }
+      }
+    }
+
+    .content {
+      margin-top: 30px;
+      display: none;
+      p {
+        color: #000;
+      }
+    }
+  }
+  &-gradient {
+    width: 100%;
+    height: 320px;
+    background: rgb(148,64,123);
+    background: -moz-linear-gradient(90deg, rgba(148,64,123,1) 0%, rgba(59,21,85,1) 50%, rgba(226,185,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(148,64,123,1) 0%, rgba(59,21,85,1) 50%, rgba(226,185,255,1) 100%);
+    background: linear-gradient(90deg, rgba(148,64,123,1) 0%, rgba(59,21,85,1) 50%, rgba(226,185,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#94407b",endColorstr="#e2b9ff",GradientType=1);
+  }
+}
+
+.main {
+  margin-top: 100px;
+}
+
+.text-normal { 
+  text-transform: none !important;
+} 
