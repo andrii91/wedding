@@ -1,12 +1,5 @@
 $( document ).ready(function() {
 
-  $(window).on('load', function () {
-    $('#preloader-active').delay(450).fadeOut('slow');
-    $('body').delay(450).css({
-      'overflow': 'visible'
-    });
-  });
- 
 /* 2. slick Nav */
 // mobile_menu
 var menu = $('ul#navigation');
@@ -31,13 +24,11 @@ function mainSlider() {
     doAnimations($animatingElements);
   });
   BasicSlider.slick({
-    autoplay: false,
-    autoplaySpeed: 10000,
+    autoplay: true,
+    autoplaySpeed: 5000,
     dots: false,
     fade: true,
     arrows: false,
-    prevArrow: '<button type="button" class="slick-prev"><i class="ti-shift-left"></i></button>',
-    nextArrow: '<button type="button" class="slick-next"><i class="ti-shift-right"></i></button>',
     responsive: [{
         breakpoint: 1024,
         settings: {

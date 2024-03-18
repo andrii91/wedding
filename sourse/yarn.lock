@@ -168,9 +168,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"OnixTest@workspace:.":
+"Wedding@workspace:.":
   version: 0.0.0-use.local
-  resolution: "OnixTest@workspace:."
+  resolution: "Wedding@workspace:."
   dependencies:
     gulp: "npm:^4.0.2"
     gulp-autoprefixer: "npm:^3.1.0"

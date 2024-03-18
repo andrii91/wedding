@@ -30,6 +30,11 @@
 .bg-secondary {
     background-color: #EDF5F7 !important;
 }
+
+.text-indigo {
+  color: var(--indigo) !important;
+}
+
 .faq {
   &-item {
     margin-top: 24px;
@@ -88,3 +93,16 @@
 .text-normal { 
   text-transform: none !important;
 } 
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  @media #{$xs}{
+    font-size: 18px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
