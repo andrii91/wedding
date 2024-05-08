@@ -132,7 +132,6 @@ $('.faq-item').click(function(){
 
   });
 
-
 }) 
 
 

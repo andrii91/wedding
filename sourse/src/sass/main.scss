@@ -210,3 +210,20 @@
 
   }
 }
+
+#map-guest {
+  width: 100%;
+
+  [data-name] {
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+}
+
+.relative {
+  position: relative;
+}
